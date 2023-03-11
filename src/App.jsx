@@ -23,6 +23,8 @@ function App() {
   useEffect(()=>{
     dispatch(getData())
     dispatch(getPhoto())
+    dispatch(getData())
+    dispatch(getPhoto())
     
   },[loop]);
 
