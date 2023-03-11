@@ -69,7 +69,7 @@ const appReducer=(state = initialState, action)=>{
 
 
 export const getData = () => async dispatch => {
-    await fetch('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=2')
+    await fetch('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=4')
     .then(response=>response.json()
     .then(items=>{
         let count=0;
@@ -81,7 +81,7 @@ export const getData = () => async dispatch => {
     })
 }
 export const getPhoto = () => async dispatch => {
-    for (let i = 0; i <=1; i++) {
+    for (let i = 0; i <=2; i++) {
         await fetch('https://cataas.com/cat?json=true')
         .then(response=>response.json())
         .then(items=>{
