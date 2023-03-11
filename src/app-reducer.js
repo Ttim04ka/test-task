@@ -81,7 +81,7 @@ export const getData = () => async dispatch => {
     })
 }
 export const getPhoto = () => async dispatch => {
-    for (let i = 0; i <=2; i++) {
+    for (let i = 0; i <=4; i++) {
         await fetch('https://cataas.com/cat?json=true')
         .then(response=>response.json())
         .then(items=>{
